@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Gemini Notebook Companion",
-  "version": "1.0.0",
+  "version": "1.1.1",
   "description": "Keep NotebookLM beside your research with a compact sidebar and reusable pop-out.",
   "minimum_chrome_version": "142",
   "permissions": [

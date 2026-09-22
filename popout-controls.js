@@ -14,9 +14,9 @@
       const shadow = host.attachShadow({ mode: 'closed' });
       const style = document.createElement('style');
       style.textContent = `
-        .bar{--bg:#f6f7f4;--ink:#213c35;--line:#dfe6e1;--muted:#708079;box-sizing:border-box;height:52px;display:flex;align-items:center;gap:10px;padding:0 14px;background:var(--bg);color:var(--ink);border-bottom:1px solid var(--line);font:12px/1.4 -apple-system,BlinkMacSystemFont,sans-serif;color-scheme:light}
+        .bar{--bg:#14211e;--ink:#e6eee8;--line:#30423a;--muted:#a2b1a8;box-sizing:border-box;height:52px;display:flex;align-items:center;gap:10px;padding:0 14px;background:var(--bg);color:var(--ink);border-bottom:1px solid var(--line);font:12px/1.4 -apple-system,BlinkMacSystemFont,sans-serif;color-scheme:light}
         .bar[data-theme=dark]{--bg:#14211e;--ink:#e6eee8;--line:#30423a;--muted:#a2b1a8;color-scheme:dark}
-        @media(prefers-color-scheme:dark){.bar[data-theme=system]{--bg:#14211e;--ink:#e6eee8;--line:#30423a;--muted:#a2b1a8;color-scheme:dark}}
+        @media(prefers-color-scheme:light){.bar[data-theme=system]{--bg:#f6f7f4;--ink:#213c35;--line:#dfe6e1;--muted:#708079;color-scheme:light}}
         .identity{margin-right:auto;min-width:0;display:flex;flex-direction:column;gap:1px}strong{font-size:14px;letter-spacing:-.4px;font-weight:600}.mode{font-size:8px;text-transform:uppercase;letter-spacing:1.2px;color:var(--muted)}label{display:flex;align-items:center;gap:6px;white-space:nowrap;font-size:11px;border:1px solid var(--line);padding:6px 8px;border-radius:7px}input{accent-color:#548267;margin:0;width:13px;height:13px}a{color:inherit;text-decoration:none;width:30px;height:30px;display:grid;place-items:center;border:1px solid var(--line);border-radius:7px;font-size:19px}a:hover{background:var(--line)}:focus-visible{outline:2px solid #79a28b;outline-offset:3px}
       `;
       root = document.createElement('div'); root.className = 'bar'; root.setAttribute('role','toolbar'); root.setAttribute('aria-label','Notebook Companion controls');

@@ -16,3 +16,10 @@
 #frame-container { flex:1; min-height:0; } iframe { display:block; width:100%; height:100%; border:0; background:var(--card); }
 .panel-bottom { flex:none; padding:8px 16px; border-top:1px solid var(--line); }.panel-bottom p { margin:0 0 6px; }.panel-bottom button:not(.text-button) { width:100%; margin:5px 0; }.panel-bottom .text-button { font-size:10px; padding:0; }
 @media(max-height:450px) { #welcome { justify-content:flex-start; padding:16px; } .empty-symbol { display:none; } }
+
+.panel-bottom .footer-links { display:flex; justify-content:flex-end; gap:10px; margin-top:7px; }
+.panel-bottom .footer-icon { color:var(--muted); opacity:.72; font-size:14px; line-height:1; text-decoration:none; }
+.panel-bottom .footer-icon:hover { color:var(--ink); }
+
+.panel-bottom .version-label { color:var(--muted); font-size:9px; align-self:center; text-decoration:none; }
+.panel-bottom .version-label:hover { color:var(--ink); }

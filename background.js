@@ -7,7 +7,11 @@ const extensionOrigin = new URL(api.runtime.getURL('/')).host;
 async function configureEmbedding(enabled) {
   // Firefox hosts remote documents natively; no iframe/header workaround is needed.
   if (api.sidebarAction) {
-    await api.declarativeNetRequest.updateDynamicRules({ removeRuleIds: [1, 2], addRules: [] });
+    // Firefox's native sidebar does not need iframe header rules. Some builds
+    // expose the API without the dynamic-rule method, so keep startup alive.
+    if (api.declarativeNetRequest?.updateDynamicRules) {
+      await api.declarativeNetRequest.updateDynamicRules({ removeRuleIds: [1, 2], addRules: [] });
+    }
     return;
   }
   const rules = Companion.ORIGINS.map((origin, index) => ({

@@ -1,8 +1,8 @@
 /* Toolbar popup only. Shared palette and sidebar layout live in ui.css. */
-.popup { width: 380px; max-width: 100vw; }
+.popup { width: 380px; min-width: 340px; min-height: 420px; max-width: 100vw; } html:has(body.popup) { width: 380px; min-width: 340px; }
 .popup .brand { display: flex; align-items: center; padding: 20px; gap: 10px; border: 0; }
 .brand img { border-radius: 10px; }
-.brand h1 { font-size: 23px; letter-spacing: -1px; line-height: 1.15; }
+.brand h1 { font-size: 20px; letter-spacing: -1px; line-height: 1.15; }
 .brand p { margin: 4px 0 0; font-size: 11px; color: var(--muted); }
 .brand-label { margin-left: auto; max-width: 84px; font-size: 8px; line-height: 1.7; letter-spacing: 1.4px; text-align: right; color: var(--muted); }
 .popup main { padding: 0 20px 18px; }
@@ -30,3 +30,13 @@
 .popup footer { padding: 12px 20px; font-size: 8px; gap: 10px; }
 .local-note { white-space: nowrap; }
 @media (prefers-reduced-motion: reduce) { .mode-card { transition: none; } }
+
+.footer-links { display:flex; align-items:center; gap:9px; }
+.footer-icon { color:var(--muted); text-decoration:none; font-size:13px; line-height:1; }
+.footer-icon:hover { color:var(--ink); }
+
+.version-label { color:var(--muted); font-size:9px; letter-spacing:.1px; text-decoration:none; }
+.version-label:hover { color:var(--ink); }
+
+.popup .mode-card.primary { background:var(--card); color:var(--ink); border-color:var(--accent); }
+.popup .mode-card.primary:hover { background:var(--soft); }

@@ -8,7 +8,7 @@ Keep NotebookLM / Gemini Notebook beside what you're reading, watching, or study
 
 ## Why I built this
 
-Studying often means a PDF in one tab, a lecture in another, and NotebookLM somewhere behind them. I built Notebook Companion to keep the conversation beside the material, without repeatedly switching back to the full notebook dashboard.
+Studying often means a PDF in one tab, a lecture in another, and NotebookLM somewhere behind them. I built Gemini Notebook Companion to keep the conversation beside the material without repeatedly switching back to the full dashboard. The browser already offers ai sidebar, but Notebook still needs a focused place for chat, sources, and account context; this ext keeps that workflow close to the page while staying small and local.
 
 ## Features
 

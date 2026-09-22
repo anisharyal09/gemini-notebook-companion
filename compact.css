@@ -12,3 +12,14 @@ html.nfc-compact :is(textarea,[contenteditable=true]) { font-size:14px !importan
 html.nfc-compact :is(.message-content img,.message-content video) { max-width:100% !important; height:auto; }
 html.nfc-compact :is(.message-content pre,.message-content table) { max-width:100%; overflow-x:auto; }
 @media(max-width:350px) { html.nfc-compact :is(.chat-panel-content,.chat-messages) { padding-inline:12px !important; } }
+
+/* The companion bar owns the top edge in Chat only mode. Hide only common
+   page-level chrome so it cannot sit underneath the controls; the Studio and
+   Sources row remains in the document flow below it. */
+html.nfc-compact :is(body > header, header[role="banner"], .top-bar, .app-header, .site-header) { display:none !important; }
+
+/* Keep the notebook header focused by removing only the Google Apps launcher. */
+html.nfc-compact :is([aria-label="Google apps"], [aria-label="Apps"], [title="Google apps"], [title="Apps"]) { display:none !important; }
+
+/* Keep account switching available in the full notebook, but out of the compact chat header. */
+html.nfc-compact :is([aria-label*="Account" i], [aria-label*="profile" i], [aria-label*="avatar" i], [title*="Account" i], [title*="profile" i]) { display:none !important; }

@@ -1,6 +1,8 @@
 # Gemini Notebook Companion
 
-<img src="icons/icon-128.png" width="72" alt="Notebook Companion icon">
+<p align="center">
+  <img src="icons/icon-128.png" width="72" alt="Notebook Companion icon">
+</p>
 
 **A notebook companion. Less switching.**
 
@@ -22,6 +24,26 @@ Studying often means a PDF in one tab, a lecture in another, and NotebookLM some
 - **Light, dark, or system theme:** for Notebook Companion's controls.
 
 No API key, backend, analytics, or runtime dependencies. An independent project, not affiliated with Google.
+
+## Visuals / Screenshots
+
+<p align="center">
+  <img src="docs/store-assets/01-extension-popup.png" alt="Gemini Notebook Companion extension popup" width="760">
+  <br>
+  <em>Choose a sidebar, floating window, or draggable page launcher.</em>
+</p>
+
+<p align="center">
+  <img src="docs/store-assets/02-sidebar-floating-button.png" alt="Notebook sidebar beside a video with the floating button launcher" width="760">
+  <br>
+  <em>Keep a notebook beside the page you are studying.</em>
+</p>
+
+<p align="center">
+  <img src="docs/store-assets/03-floating-window-pdf.png" alt="Floating Notebook window beside a PDF" width="760">
+  <br>
+  <em>Use a reusable floating window while reading a PDF.</em>
+</p>
 
 ## Install
 
@@ -70,7 +92,7 @@ npm run build
 
 The build produces `dist/chrome` and `dist/firefox`. After an update, reload the extension and reopen its windows. The Firefox extension ID stays unchanged so existing development installations retain their settings.
 
-[Changelog](CHANGELOG.md) · [Technical notes](docs/technical-notes.md) · [Icon generation](docs/icon-prompt.md)
+[Changelog](CHANGELOG.md) · [Technical notes](docs/technical-notes.md) · [Store listing copy](docs/store-listing.md) · [Icon generation](docs/icon-prompt.md)
 
 ## License
 

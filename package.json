@@ -1,0 +1,14 @@
+{
+  "name": "gemini-notebook-companion",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test": "node --test tests/*.test.cjs",
+    "build": "node scripts/build.mjs chrome && node scripts/build.mjs firefox"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/anisharyal09/gemini-notebook-companion.git"
+  },
+  "license": "MIT"
+}

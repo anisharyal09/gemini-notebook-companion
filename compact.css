@@ -1,0 +1,14 @@
+/* All changes are scoped to verified companion views and reversible. */
+html.margin-popout { --companion-bar-height:52px; }
+html.margin-popout body { box-sizing:border-box !important; margin-top:var(--companion-bar-height) !important; padding-top:0 !important; height:calc(100dvh - var(--companion-bar-height)) !important; }
+html.margin-popout :is(app-root, notebook-app) { display:block; height:100%; min-height:0; }
+html.nfc-compact { scroll-padding-bottom:80px; }
+html.nfc-compact :is(notebook-header,.notebook-header,.notebook-header-container,studio-panel,.studio-panel,.studio-panel-container,source-panel,sources-panel,.source-panel,.sources-panel,.source-panel-container) { display:none !important; }
+html.nfc-compact :is(.notebook-container,.notebook-content,.notebook-panels) { padding:0 !important; gap:0 !important; min-width:0 !important; min-height:0 !important; }
+html.nfc-compact :is(chat-panel,.chat-panel,.chat-panel-container) { width:100% !important; max-width:none !important; min-width:0 !important; min-height:0 !important; flex:1 1 100% !important; margin:0 !important; border:0 !important; border-radius:0 !important; }
+html.nfc-compact :is(.chat-panel-content,.chat-messages) { padding-inline:16px !important; }
+html.nfc-compact :is(.chat-message,.message-content) { font-size:14px !important; line-height:1.65 !important; overflow-wrap:anywhere; }
+html.nfc-compact :is(textarea,[contenteditable=true]) { font-size:14px !important; line-height:1.5 !important; }
+html.nfc-compact :is(.message-content img,.message-content video) { max-width:100% !important; height:auto; }
+html.nfc-compact :is(.message-content pre,.message-content table) { max-width:100%; overflow-x:auto; }
+@media(max-width:350px) { html.nfc-compact :is(.chat-panel-content,.chat-messages) { padding-inline:12px !important; } }

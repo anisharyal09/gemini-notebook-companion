@@ -1,7 +1,7 @@
 # Gemini Notebook Companion
 
 <p align="center">
-  <img src="icons/icon-128.png" width="72" alt="Notebook Companion icon">
+  <img src="icons/icon-128.png" width="96" alt="Notebook Companion icon">
 </p>
 
 **A notebook companion. Less switching.**
@@ -92,7 +92,7 @@ npm run build
 
 The build produces `dist/chrome` and `dist/firefox`. After an update, reload the extension and reopen its windows. The Firefox extension ID stays unchanged so existing development installations retain their settings.
 
-[Changelog](CHANGELOG.md) · [Technical notes](docs/technical-notes.md) · [Store listing copy](docs/store-listing.md) · [Icon generation](docs/icon-prompt.md)
+[Changelog](CHANGELOG.md) · [Privacy policy](PRIVACY.md) · [Technical notes](docs/technical-notes.md) · [Store listing copy](docs/store-listing.md) · [Icon generation](docs/icon-prompt.md)
 
 ## License
 

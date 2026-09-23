@@ -1,5 +1,6 @@
 /* Toolbar popup only. Shared palette and sidebar layout live in ui.css. */
-.popup { width: 380px; min-width: 340px; min-height: 420px; max-width: 100vw; } html:has(body.popup) { width: 380px; min-width: 340px; }
+.popup { width: 380px; min-width: 340px; min-height: 420px; max-width: 100%; overflow-x: hidden; }
+html:has(body.popup) { width: 380px; min-width: 340px; max-width: 100%; overflow-x: hidden; }
 .popup .brand { display: flex; align-items: center; padding: 20px; gap: 10px; border: 0; }
 .brand img { border-radius: 10px; }
 .brand h1 { font-size: 20px; letter-spacing: -1px; line-height: 1.15; }

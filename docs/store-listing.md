@@ -34,6 +34,10 @@ Provide compact sidebar and floating access to a user's own NotebookLM notebooks
 **Privacy**  
 This extension does not collect, sell, or transmit personal data to its developer. It stores only extension settings and a saved NotebookLM URL in browser-local storage. NotebookLM itself remains a Google service and connects directly to Google under the user's account.
 
+**Privacy policy URL**
+
+https://github.com/anishcreations/gemini-notebook-companion/blob/main/PRIVACY.md
+
 **Permission explanations**
 
 | Permission | Why it is needed |
@@ -62,6 +66,10 @@ Keep NotebookLM beside your research with a Firefox sidebar, reusable floating w
 
 **Categories**  
 Productivity; Education
+
+**Support website**
+
+https://github.com/anishcreations/gemini-notebook-companion/issues
 
 **Description**  
 Use the same detailed description and screenshots listed for Chrome.

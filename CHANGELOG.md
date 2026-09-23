@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.1.2 — 2026-09-23
+
+Store compliance and icon update.
+
+- Added a public privacy policy and store-ready privacy URL.
+- Moved extension and privacy support to GitHub Issues.
+- Updated repository links for the Anish Creations organization.
+- Regenerated larger, sharper browser icons from the high-resolution source artwork.
+
 ## 1.1.1 — 2026-09-22
 
 Focused Chat only header cleanup.
